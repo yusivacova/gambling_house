@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "webpack.config.js",
-    "homepage": "https://github.com/yusivacova/only_test",
+    "homepage": "https://github.com/yusivacova/gambling_house",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "node_modules/.bin/webpack --progress",
@@ -65,7 +65,6 @@
 	"dependencies": {
 		"@babel/polyfill": "^7.12.1",
 		"gh-pages": "^5.0.0",
-		"node-sass": "^8.0.0",
-		"normalize.css": "^8.0.1"
+		"node-sass": "^8.0.0"
 	}
 }

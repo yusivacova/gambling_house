@@ -1,0 +1,22 @@
+html {
+  font-size: 10px;
+  @extend %font-main;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
+  background:
+    url("../assets/images/bg/dot-light1.png") left / contain no-repeat,
+    url("../assets/images/bg/dot-light2.png") right / contain no-repeat,
+    $color-main-navy-blue;
+}
+
+.container {
+  overflow: hidden;
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0 15px;
+}

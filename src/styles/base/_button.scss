@@ -1,0 +1,18 @@
+.button {
+  padding: 14px 13px;
+  border: 2px solid $color-additional-purple;
+  border-radius: 24px;
+  @include font($size: 1.6rem, $height: 125%);
+  color: $color-main-clean-white;
+  background: $color-main-navy-blue;
+  @extend %transition;
+
+  &_color {
+    border: none;
+    background: $color-main-blue;
+  }
+
+   &:hover {
+    background: $color-main-blue;
+  }
+}

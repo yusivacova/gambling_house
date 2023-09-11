@@ -1,0 +1,21 @@
+.nav {
+  grid-area: nav;
+  &__list {
+    @include flex;
+    gap: 32px;
+  }
+  &__item {
+  }
+  &__link {
+  }
+}
+
+.nav-link {
+  @include font($size: 1.6rem, $height: 125%);
+  color: $color-main-clean-white;
+  @extend %transition;
+
+  &:hover {
+    color: $color-main-blue;
+  }
+}

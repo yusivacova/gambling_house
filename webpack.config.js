@@ -5,7 +5,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
 const HtmlValidatePlugin = require('html-validate-webpack-plugin');
-const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
 
 const devServer = (isDev) => !isDev ? {} : {
   devServer: {
@@ -29,7 +28,7 @@ module.exports = ({ development }) => ({
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].js',
-    assetModuleFilename: 'assets/images/[name].[ext]'
+    assetModuleFilename: 'assets/images/[name][ext]'
   },
   plugins: [
     new HtmlWebPackPlugin({
@@ -54,7 +53,6 @@ module.exports = ({ development }) => ({
       fix: false,
     }),
     new HtmlValidatePlugin(),
-    new ImageminWebpWebpackPlugin(),
   ],
   module: {
     rules: [
