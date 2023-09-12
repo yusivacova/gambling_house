@@ -54,3 +54,8 @@ body {
   @include font($size: 1.4rem, $height: 114.3%);
   @extend %font-addition;
 }
+
+.active-link {
+  text-decoration-line: underline;
+  color: $color-main-blue;
+}

@@ -1,0 +1,59 @@
+.footer {
+  padding: 0 0 24px;
+  border-top: 4px solid $color-main-blue;
+  border-right: 4px solid $color-main-blue;
+  border-left: 4px solid $color-main-blue;
+  border-radius: 64px 64px 0 0;
+
+  &__body {
+    height: 100%;
+    @include flex($align: flex-end);
+  }
+
+  &__nav {
+  }
+
+  &__network {
+  }
+}
+
+.footer .container {
+  height: 100%;
+}
+
+.network {
+  @include flex($direction: column, $align: flex-end);
+  &__title {
+    margin: 0 0 10px;
+
+    &:hover {
+      color: $color-main-clean-white;
+    }
+  }
+
+  &__icons {
+    @include flex;
+    gap: 8px;
+  }
+
+  &__icon {
+    @include flex($justify: center);
+    width: 32px;
+    height: 32px;
+    background: url("../assets/icons/footer/bg-icon.svg") center/cover no-repeat;
+    @extend %transition;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.icon-footer {
+  @extend %transition;
+}
+
+.network__icon:hover svg {
+  stroke: $color-main-clean-white;
+}

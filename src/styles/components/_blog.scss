@@ -6,10 +6,10 @@
   }
 
   &__items {
+    overflow: auto;
     @include flex($direction: column);
     gap: 16px;
     max-height: 595px;
-    overflow: auto;
     padding: 24px;
     border: 3px solid $color-main-blue;
     border-radius: 100px;
@@ -22,6 +22,11 @@
     padding: 16px 64px;
     border-radius: 196px;
     background: $color-main-deep-blue;
+    @extend %transition;
+
+    &:hover {
+      background: $color-main-blue;
+    }
   }
 
   &__text {
