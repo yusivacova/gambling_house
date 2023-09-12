@@ -1,14 +1,16 @@
 .main-info {
-  @include flex($direction: column,  $align: flex-start);
+  flex: 0 1 635px;
+  @include flex($direction: column, $align: flex-start);
   gap: 24px;
+  padding: 288px 0 0;
 
-		&__title {
-		}
+  &__title {
+  }
 
-		&__subtitle {
-      margin: 0 0 24px;
-		}
+  &__subtitle {
+    margin: 0 0 24px;
+  }
 
-		&__button {
-		}
+  &__button {
+  }
 }

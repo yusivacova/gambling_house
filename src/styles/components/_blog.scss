@@ -1,5 +1,6 @@
 .blog {
   @include flex($direction: column);
+  padding: 134px 0 0;
 
   &__title {
     margin: 0 0 24px;

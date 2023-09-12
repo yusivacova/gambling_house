@@ -47,6 +47,7 @@ body {
 
 .subtitle {
   @include font($size: 3.2rem, $height: 100%, $weight: 500);
+  color: $color-transp-white-light;
 }
 
 .date-text {
