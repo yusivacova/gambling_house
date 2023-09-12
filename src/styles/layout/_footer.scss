@@ -37,23 +37,43 @@
   }
 
   &__icon {
-    @include flex($justify: center);
+    position: relative;
+    display: inline-block;
     width: 32px;
     height: 32px;
-    background: url("../assets/icons/footer/bg-icon.svg") center/cover no-repeat;
+    @extend %transition;
+
+    &:hover svg {
+     fill: $color-main-clean-white;
+    }
+
+    &:hover .network__icon-bg svg {
+     fill: $color-additional-purple;
+    }
+  }
+
+  &__icon-bg {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+     @extend %transition;
+
+     svg {
+      fill: $color-main-blue;
+    }
+  }
+
+  &__icon-footer {
+    position: absolute;
+    left: 27%;
+    top: 27%;
+    width: 16px;
+    height: 16px;
     @extend %transition;
 
     svg {
-      width: 16px;
-      height: 16px;
+      fill: $color-main-navy-blue;
     }
   }
 }
 
-.icon-footer {
-  @extend %transition;
-}
-
-.network__icon:hover svg {
-  stroke: $color-main-clean-white;
-}

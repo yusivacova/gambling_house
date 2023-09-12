@@ -33,15 +33,20 @@
   &__lang {
     @include flex;
     gap: 8px;
-  }
 
-  &__login {
+    &:hover .options__lang-icon svg {
+      fill: $color-main-clean-white;
+    }
   }
 
   &__lang-icon {
     display: block;
     width: 16px;
     height: 16px;
+
+    svg {
+      fill: $color-additional-purple;
+    }
   }
 
   &__authorization {
