@@ -2,6 +2,7 @@
   padding: 14px 13px;
   border: 2px solid $color-additional-purple;
   border-radius: 24px;
+  text-transform: uppercase;
   @include font($size: 1.6rem, $height: 125%);
   color: $color-main-clean-white;
   background: $color-main-navy-blue;
@@ -10,9 +11,19 @@
   &_color {
     border: none;
     background: $color-main-blue;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
-   &:hover {
+  &:hover {
     background: $color-main-blue;
   }
+}
+
+.button_big {
+  padding: 20px 72px;
+  border-radius: 48px;
+  @include font($size: 2.4rem, $height: 133.3%, $weight: 600);
 }

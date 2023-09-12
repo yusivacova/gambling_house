@@ -9,13 +9,3 @@
   &__link {
   }
 }
-
-.nav-link {
-  @include font($size: 1.6rem, $height: 125%);
-  color: $color-main-clean-white;
-  @extend %transition;
-
-  &:hover {
-    color: $color-main-blue;
-  }
-}

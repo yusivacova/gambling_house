@@ -1,0 +1,36 @@
+.banners {
+  @include flex($justify: center);
+  gap: 17px;
+
+  &__row {
+    position: relative;
+    flex: 0 1 99px;
+  }
+
+  &__item {
+    margin: 0 0 30px;
+
+    svg {
+      height: 99px;
+    }
+  }
+}
+
+.item-big {
+  svg {
+    height: 220px;
+  }
+}
+
+.cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 11, 31, 0.7);
+
+  &_center {
+    background: rgba(18, 11, 31, 0.3);
+  }
+}

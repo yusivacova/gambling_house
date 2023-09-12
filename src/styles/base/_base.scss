@@ -6,8 +6,10 @@ html {
 body {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 10vh 1fr 10vh;
   min-height: 100%;
+  color: $color-main-clean-white;
+  @include font($size: 2.4rem, $height: 116.7%);
   background:
     url("../assets/images/bg/dot-light1.png") left / contain no-repeat,
     url("../assets/images/bg/dot-light2.png") right / contain no-repeat,
@@ -19,4 +21,36 @@ body {
   max-width: $content-width;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.small-text {
+  color: $color-main-clean-white;
+  @include font($size: 1.6rem, $height: 125%);
+  @extend %transition;
+
+  &:hover {
+    color: $color-main-blue;
+  }
+}
+
+.main-title {
+  @include font($size: 9.6rem, $height: 100%, $weight: 500);
+
+  span {
+    color: $color-main-blue;
+  }
+}
+
+.second-title {
+  @include font($size: 4.0rem, $height: 100%, $weight: 600);
+}
+
+.subtitle {
+  @include font($size: 3.2rem, $height: 100%, $weight: 500);
+}
+
+.date-text {
+  color: $color-transp-white-light;
+  @include font($size: 1.4rem, $height: 114.3%);
+  @extend %font-addition;
 }

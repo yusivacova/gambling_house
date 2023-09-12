@@ -1,0 +1,14 @@
+.main-info {
+  @include flex($direction: column,  $align: flex-start);
+  gap: 24px;
+
+		&__title {
+		}
+
+		&__subtitle {
+      margin: 0 0 24px;
+		}
+
+		&__button {
+		}
+}

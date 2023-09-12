@@ -1,0 +1,37 @@
+.blog {
+  @include flex($direction: column);
+
+  &__title {
+    margin: 0 0 24px;
+  }
+
+  &__items {
+    @include flex($direction: column);
+    gap: 16px;
+    max-height: 595px;
+    overflow: auto;
+    padding: 24px;
+    border: 3px solid $color-main-blue;
+    border-radius: 100px;
+    background: $color-transp-white-dark;
+    backdrop-filter: blur(10px);
+  }
+
+  &__row {
+    @include flex($direction: column, $align: flex-start);
+    padding: 16px 64px;
+    border-radius: 196px;
+    background: $color-main-deep-blue;
+  }
+
+  &__text {
+    margin: 0 0 14px;
+  }
+
+  &__date {
+  }
+}
+
+.row-link {
+  background: $color-main-blue;
+}
